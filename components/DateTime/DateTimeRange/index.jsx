@@ -1,5 +1,6 @@
 /**
- * DateTimeRange component
+ * DateTimeRange component users DateRange and TimeRange components
+ * allowes user to pick start and end date as well as start and end time
  */
 import React, { Component } from "react";
 import { func } from "prop-types";

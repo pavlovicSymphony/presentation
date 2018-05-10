@@ -26,7 +26,10 @@ export const isNurseLate = ({ assignment, in_out: { start } }) => {
   if (nurseStartDateTime.isBetween(assignmentStartDateTime, assignmentEndDateTime)) {
     const nurseHours = (~nurseStartTime.diff(assignmentStartTime, 'hours')) + 1;
 
-    if (nurseHours >= 12 && nurseHours <= 23) {
+  /**
+   * Check if it's next day
+   */
+   if (nurseHours >= 12 && nurseHours <= 23) {
       assignmentStartTime.subtract(1, 'day');
     }
 

@@ -1,5 +1,6 @@
 /**
  * Webmerge reducer
+ * It uses Map from immutable, to make sure that state can not be cahnged.
  */
 import { Map } from 'immutable';
 import { ActionTypes } from './actions';

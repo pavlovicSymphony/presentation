@@ -1,3 +1,7 @@
+/**
+ * TimeRange component bases on SelectField from react-md
+ * allowes user to select stat and end time
+ */
 import React, { Component } from "react";
 import { func, object } from "prop-types";
 import SelectField from "react-md/lib/SelectFields";

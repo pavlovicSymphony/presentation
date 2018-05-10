@@ -1,3 +1,6 @@
+/**
+ * Webmerge actions
+ */
 import axios from 'axios';
 import { prepareWebmergeData, createURL } from '../../utils/webmerge';
 import { getNurseSymlinks } from '../../modules/symlinks/actions';
@@ -30,6 +33,12 @@ const resumePublished = (payload = {}, error = null) => ({
   error,
 });
 
+/**
+ * It uses methods form utils/webmerge
+ * Webmerge was used to create nurse PDF resume.
+ * By sending data to the webmerge we were able to reuse pdf tamplate for resume,
+ * after merging data and template it was send to the aws by webmerge hooks.
+ */
 export const publishResume = (data) => {
   return (dispatch) => {
     const apiUrl = createURL('merge');
@@ -42,6 +51,7 @@ export const publishResume = (data) => {
     ).then(
       () => {
         dispatch(resumePublished());
+        //After it was sent to aws we fatch urls to the files that was uploaded
         dispatch(getNurseSymlinks(data.nurse.id));
       },
       (error) => {

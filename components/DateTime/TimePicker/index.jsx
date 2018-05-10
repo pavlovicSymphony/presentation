@@ -1,5 +1,6 @@
 /**
- * TimePicker component
+ * TimePicker component bases on SelectField from react-md
+ * allowes user to select time in format HH:mm
  */
 import React, { Component } from "react";
 import { func, object, string, array } from "prop-types";

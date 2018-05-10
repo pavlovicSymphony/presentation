@@ -1,5 +1,6 @@
 /**
- * DateRange component
+ * DateRange component used for picking start and end dates based on react-dates
+ * There is an image of how the components looks
  */
 import React, { Component } from "react";
 import PropTypes from 'prop-types';

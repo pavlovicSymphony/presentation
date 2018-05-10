@@ -4,8 +4,13 @@ import { shallow } from "enzyme";
 import toJSON from "enzyme-to-json";
 
 import TimeCell from "./index";
-
+/**
+ * Testing TimeCell component
+ */
 describe("TimeCell", () => {
+  /**
+   * Color both start/end time green
+   */
   it("should render time when the value is valid", () => {
     const props = {
       in_out: {start: '12:00:00', end: '15:00:00'},
@@ -23,6 +28,9 @@ describe("TimeCell", () => {
     expect(toJSON(RenderdTimeCell)).toMatchSnapshot();
   });
 
+  /**
+   * Color start time red when nurse is late
+   */
   it("should render time when the value is valid but late check in", () => {
     const props = {
       in_out: {start: '12:00:00', end: '15:00:00'},
@@ -40,6 +48,9 @@ describe("TimeCell", () => {
     expect(toJSON(RenderdTimeCell)).toMatchSnapshot();
   });
 
+  /**
+   * Show X and color red if nurse did not jet clock out
+   */
   it("should render X when end is undefined", () => {
     const props = {
       in_out: {start: '12:00:00', end: undefined},

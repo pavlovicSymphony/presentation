@@ -1,5 +1,6 @@
 /**
- * DateTimePicker component
+ * DateTimePicker component uses created DatePicker and TimePicker combain 
+ * allowes user to select date and time
  */
 import React, { Component } from "react";
 import { func, string, object, bool, array } from "prop-types";

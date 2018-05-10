@@ -1,3 +1,6 @@
+/**
+ * Webmerge helper functions
+ */
 import moment from 'moment';
 import find from '../ListUtils/find';
 import { states_abbreviations } from '../../config';
@@ -126,6 +129,9 @@ const foramtEmrs = (emrs = []) => {
   return emrs.map((emr) => emr.name);
 };
 
+/**
+ * Used to prapre data to send to webmerge
+ */
 export const prepareWebmergeData = ({
   nurse,
   allJobTitles,
@@ -182,7 +188,9 @@ export const prepareWebmergeData = ({
   return formatedData;
 };
 
-
+/**
+ * Generate URL for valid enviroment
+ */
 export const createURL = (type) => {
   const { ID, URL, KEY } = WEBMERGE;
   if (type === 'merge') {

@@ -1,5 +1,5 @@
 /**
- * DatePicker component
+ * DatePicker component used for picking dates based on react-dates
  */
 import React, { Component } from "react";
 import PropTypes from 'prop-types';

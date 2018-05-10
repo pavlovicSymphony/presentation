@@ -1,5 +1,6 @@
 /**
  * Webmerge publish selectors
+ * selectors were used to memoized data
  */
 import { createSelector } from 'reselect';
 

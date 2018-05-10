@@ -1,3 +1,9 @@
+/**
+ * TimeCell component show the user the time so that it colors red
+ * if nurse clocks in late, X if nurse did not clock in/out and
+ * green nurse clock in/out if it in time
+ * It uses isNurseLate method from utils folder
+ */
 import React from "react";
 import PropTypes from "prop-types";
 import moment from 'moment';
