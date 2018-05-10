@@ -1,0 +1,63 @@
+/**
+ * DateTimePicker component style
+ */
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 8px;
+
+  :global{
+    .SingleDatePickerInput {
+      display: block;
+      height: 40px;
+      min-width: 80%;
+      border: 1px solid #DFE2E5;
+      padding: 0px 6px 0px 6px;
+      border-radius: 4px;
+      background: #FFF;
+      background: -webkit-linear-gradient(#FFF, #F3F5F7);
+      background: -o-linear-gradient(#FFF, #F3F5F7);
+      background: -moz-linear-gradient(#FFF, #F3F5F7);
+      background: linear-gradient(#FFF, #F3F5F7);
+    }
+
+    .SingleDatePickerInput__clear-date {
+      position: absolute;
+      right: -7px;
+      top: 2px;
+    }
+
+    .md-text-field {
+      font-size: 14px;
+      padding: 3px 0 0 5px;
+    }
+
+    .md-icon {
+      position: relative;
+      top: -3px;
+      right: -10px;
+    }
+  }
+}
+
+.date {
+  width: 175px;
+}
+
+.time {
+  margin-left: 10px;
+}
+
+.label {
+  font-size: 13px;
+  color: #7F8FA4;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.disabled {
+  pointer-events: none;
+  background: lightgray;
+}

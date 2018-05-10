@@ -1,0 +1,38 @@
+/**
+ * TimePicker component styles
+ */
+
+.container {
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+
+  :global {
+    .md-select-field .md-divider {
+      width: 0;
+    }
+  }
+}
+
+.label {
+  font-size: 13px;
+  color: #7F8FA4;
+  font-weight: 600;
+  padding-bottom: 5px;
+  display: block;
+  margin: 0;
+}
+
+.select {
+  border: 1px solid #DFE2E5;
+  padding: 0px 6px 0px 6px;
+  border-radius: 4px;
+  width: 100% !important;
+  height: 100%;
+  background: #FFF;
+  background: -webkit-linear-gradient(#FFF, #F3F5F7);
+  background: -o-linear-gradient(#FFF, #F3F5F7);
+  background: -moz-linear-gradient(#FFF, #F3F5F7);
+  background: linear-gradient(#FFF, #F3F5F7);
+}
